@@ -70,6 +70,18 @@ Docker is a containerization platform that allows developers to package applicat
 
 ## Essential Commands for Container Management using Docker
 
+### 0.Docker Installiation Commnads :- 
+
+sudo apt update
+sudo apt install docker.io -y
+sudo systemctl start docker
+sudo systemctl enable docker
+sudo usermod -aG docker $USER
+newgrp docker
+sudo systemctl status docker
+docker --version
+docker info
+
 ### 1. **Create a Container**
 ```sh
 docker create --name my_container ubuntu
