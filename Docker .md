@@ -1,13 +1,13 @@
 # Docker install Commands :- 
--sudo apt update -y
--sudo apt install -y docker.io -y
--docker --version
--docker version
--sudo systemctl status docker
--sudo systemctl start docke
--sudo systemctl enable docker
--sudo usermod -aG docker $USER
--newgrp docker
+- sudo apt update -y
+- sudo apt install -y docker.io -y
+- docker --version
+- docker version
+- sudo systemctl status docker
+- sudo systemctl start docke
+- sudo systemctl enable docker
+- sudo usermod -aG docker $USER
+- newgrp docker
 
 
 
