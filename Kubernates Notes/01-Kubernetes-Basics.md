@@ -20,6 +20,8 @@
                                                           ↓
                                                      Application
 
+                                                     
+
 ## 1. What is Kubernetes Architecture?
 
 ### Short Definition — English
