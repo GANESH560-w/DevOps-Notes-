@@ -1,6 +1,6 @@
 # Kubernetes Architecture
 <p align="center">
-  <img src="K83%20Architure.png" alt="K83 Architecture" width="900">
+  <img src="K83%20Architure.png" alt="K83 Architecture" width="500">
 </p>
 
 ## 1. What is Kubernetes Architecture?
