@@ -1,30 +1,5 @@
 # Kubernetes Architecture 
-                        ┌───────────────────────────────────────────────────────────────────────────┐
-│                          GitHub Repository Architecture                    │
-│                                                                             │
-│                         ┌─────────────────────────┐                       │
-│                         │      GitHub Platform      │      ┌─────────────┐│
-│                         │     (Control Plane)        │      │  Repo Data  ││
-│   👤        (git) CLI ─►│  ┌───────────────────┐   │      │  (DataPlane)││
-│  User ─┤                │  │  Webhooks /        │   │      │             ││
-│         (Web) UI  ─────►│  │  Actions Controller│   │      │  main  dev  ││
-│                         │  └─────────┬─────────┘   │      │  branch branch││
-│                         │            ▲              │      │             ││
-│                         │            ▼              │  ►   │ ┌─────────┐ ││
-│                         │  ┌───────────────────┐   │──────►│ │ Commits │ ││
-│                         │  │   Git/API Server   │◄─►│      │ │ Trees   │ ││
-│                         │  │ (REST/GraphQL API) │   │      │ │ Blobs   │ ││
-│                         │  └─────────┬─────────┘   │      │ └─────────┘ ││
-│                         │            ▲              │      │             ││
-│                         │            ▼              │      │  Issues /   ││
-│                         │  ┌───────────────────┐   │      │  PRs /      ││
-│                         │  │  Auth Controller   │   │      │  Wiki       ││ 
-│                         │  └───────────────────┘   │      └─────────────┘│
-│                         └─────────────────────────┘                         │
-│                                                                             │
-│  @venkube-style notes                                                       │
-└───────────────────────────────────────────────────────────────────────────┘
-                                                     
+
 
 ## 1. What is Kubernetes Architecture?
 
